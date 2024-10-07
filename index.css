@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(169, 243, 169)
+}
+
+.top-row{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+align-items:center;
+}
+
+.name{
+    background-color:yellow ;
+    font-family: Arial;
+    font-size: 100px;
+    flex:1;
+}
+.navigation{
+    background-color: blueviolet;
+    display:flex;
+    flex-direction:column;
+}
+.discription{
+    color:blue;
+    font-size: 50px;
+    background-color: white;
+}  
+button{
+    border:none;
+    padding:8px;
+    cursor:pointer;
+} 
