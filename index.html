@@ -5,17 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     <nav class="top-row">
-        <div class="name">Ajaya Sauden</div>
-        <div class="navigation"><button>Home</button>
-        <button>Works</button>    
-        <button>Contacts</button>
-        <button>About me</button></div>
-        </nav>
-    <div class="discription"><p>Hello,<br>I am Ajaya Sauden, starting is the first step of success and is defined by your passion.</p></div>
+        <div class="name" id="home">Ajaya Sauden</div>
+        <div class="navigation">
+            <button class="js-home homeButton"
+            onclick="home()">Home</button>
+            <button onclick="works()">Works</button>  
+            <button onclick="aboutMe()">About me</button>  
+            <button class="js-contacts contactsButton"
+            onclick="contacts()">Contacts</button>
+            
+        </div>
+    </nav> 
     
+    <div class="contents">
+        <div class="discription"><p>Hello,<br>I am Ajaya Sauden, starting is the first step of success and is defined by your work.
+        Welcome to the homepage of my portfolio.</p>
+        </div>
+        <div>
+            <img class="image" src="/images/Leonardo_Kino_XL_create_a_imge_with_a_lapton_with_javascript_c_0.jpg" alt="image">
+        </div>
+    </div>
+
+    <div id="works" class="projectworks">
+        <h2>Works:</h2>
+            <p> 
+                I have been learning programming about a year. Here are some of my
+                small projects collections during learning like different tools used
+                based on projects.
+            </p>
+            <ul>
+                <li><a href="https://todo-list-gold-two-53.vercel.app/" target="_blank">A simple todo-list</a>
+                </li>
+                
+            </ul>
+    </div>
+
+    <div id="about" class="projectabout">
+        <h2>About me:</h2>
+            <p>    
+                Myself Ajaya Sauden currently completed bachelores in electronics communication and information engineering from Kathmandu Engineering College.
+                I would like to describe myself an enthusiast on arttificial intelligence and its unlimited
+                posssibilities.
+            </p>
+    </div>
+
+    <div id="contacts" class="projectcontacts">
+        <h2>Contacts information:</h2>
+        <ul>
+            <li><a href="mailto:ajayasauden.01@gmail.com">ajayasauden.01@gmail.com</a>
+            </li>
+            <li>mobile:987654321</li>
+            <li>github:<a href="https://github.com/ajayasauden" target="_blank">ajayasauden</a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/ajaya-sauden-06a2a530a/" target="_blank">linkedin</a>
+
+        </ul>  
+    </div>
+    <script src="index.js"></script>
     
 </body>
 </html>
