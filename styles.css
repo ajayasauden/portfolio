@@ -1,0 +1,241 @@
+body{
+    font-family: arial;
+    margin-top:0px;
+    background:linear-gradient(rgb(251, 171, 171),rgb(148, 215, 224), pink)
+}
+
+.top-row{
+background-color: lightblue;
+/* display:flex;
+flex-direction:row;
+align-items:center; */
+position:relative;
+height:112px;
+}
+@media(max-width:799px){
+    .top-row{
+        height:40px;
+    }
+}
+
+.name{
+    font-family: Arial;
+    font-size: 70px;
+    display:flex;
+    flex:1;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+@media(max-width:799px){
+    .name{
+        font-size: 35px;
+    }
+}
+.logo-container{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    position:absolute;
+    right:90px;
+    bottom:5px;
+}
+.logo {
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;  
+}
+@media(max-width:799px){
+    .logo-container{
+        gap:8px;
+    }
+}
+/* .logo{
+    display:flex;
+    visibility:visible;
+    flex-direction: row;
+    height:20px;
+    width:20px;
+    border-radius: 8px;
+    position:absolute;
+    margin-left:200px;
+} */
+/* .mail{
+    right:100px;
+}
+.phone{
+    right:140px;
+}
+.linkedin{
+    right:180px;
+}
+.github{
+    right:210px;
+} */
+
+@media(max-width:799px){
+    .logo{
+        height:5px;
+        width:5px;
+        border-radius: 4px;
+        top:10px;
+    }
+}
+.navigation{
+    display:flex;
+    flex-direction:column;
+    width:80px;
+    position:fixed;
+    right:0px;
+    top:0px;
+    margin: 0px;
+}
+@media(max-width:799){
+    .navigation{
+        width:40px;
+        margin-top: 0px;
+    }
+}
+button{
+    border:none;
+    padding:6px;
+    cursor:pointer;
+} 
+.homeButton{
+    border-top-left-radius: 12px;
+}
+.contactsButton{
+    border-bottom-left-radius: 12px;
+}
+.discription{
+    color:rgb(95, 95, 118);
+    margin: 10px;
+    background-image: url('/images/wow.jpg'); /* add this line */
+    background-size: cover; /* optional, but recommended */
+    background-position: center; /* optional, but recommended */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:500px;
+}  
+.profile-discription{
+    font-size: 25px;
+    color:white;
+}
+.intro{
+    padding-left:4rem;
+}
+.image{
+    width:200px;
+    height:200px;
+    border-radius: 150px;
+}
+@media (max-width: 799px) {
+    .profile-discription {
+      text-align: center; /* add this line */
+    }
+    .intro{
+        padding-right:4rem;
+    }
+    .image{
+        width:100px;
+        height:100px;
+    }
+  }
+@media(max-width:799px){
+    .navigation button {
+        padding:0px; /* reduce padding */
+        font-size: 9px; /* reduce text size */
+        width:auto; /* adjust button width */
+    }
+ }
+button:hover{
+ background-color: rgb(159, 186, 202);
+}
+.profile{
+    display:flex;
+    align-items: center;
+}
+
+.projectworks{
+    background-color: rgb(159, 209, 215);
+    padding-left: 10px;
+    display:flex;
+    justify-content: space-between;
+    gap:40px;
+    margin-bottom:10px;
+}
+@media(max-width: 799px) {
+    .projectworks {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+}
+.work-disc{
+    padding-left:20px;
+    margin-top:0px;
+}
+.disc, .proj{
+    flex:1;
+    border:solid rgb(191, 230, 230);
+    border-width: 10px;
+    height:300px;
+    border-radius: 17px;
+    padding:0px 12px;
+    margin:0px 10px ;
+}
+@media(max-width:799px){
+    .projectworks{
+        flex-direction:column;
+    }
+    .disc,.proj{
+        flex-basis: 150px;
+        min-height:150px;
+    }
+}
+.projectabout{
+    background-color: rgb(159, 209, 215);
+    padding-left: 10px;
+    display:flex;
+    justify-content: space-between;
+    gap:40px;
+    margin-bottom: 10px;
+}
+.about-discription,.about-details{
+    border:solid rgb(191, 230, 230);
+    border-width: 10px;
+    border-radius: 17px;
+    padding:0px 12px;
+    margin:0px 10px ;
+    flex:1;
+}
+@media (max-width:799px){
+    .projectabout{
+        flex-direction: column;
+    }
+    .about-discription,.about-details{
+        height:auto;
+    }
+}
+.work-title,.about-title, .contact-title{
+    color:rgb(80, 79, 79);
+}
+.projectcontacts{
+    background-color: rgb(159, 209, 215);
+    padding-left: 10px;
+}
+p{
+    font-size:25px;
+}
+@media(max-width:799px)
+{
+   p{
+    font-size:17px;
+   } 
+}
+footer{
+    margin: 0 auto;
+    padding:0px 10px;
+    text-align: center;
+}

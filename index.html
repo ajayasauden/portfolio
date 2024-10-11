@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
     <nav class="top-row">
-        <div class="name" id="home">Ajaya Sauden</div>
+        <div class="name" id="home">Welcome,</div>
+        <div class="logo-container">
+            <img class="logo mail" onclick="contacts()" src="/images/mail.png">
+            <img class="logo linkedin" onclick="contacts()" src="/images/linkedin.png">
+            <img class="logo phone" onclick="contacts()" src="/images/phone.png">
+            <img class="logo github" onclick="contacts()" src="/images/github.png">
+        </div>
         <div class="navigation">
             <button class="js-home homeButton"
             onclick="home()">Home</button>
@@ -21,42 +27,54 @@
         </div>
     </nav> 
     
-    <div class="contents">
-        <div class="discription"><p>Hello,<br>I am Ajaya Sauden, starting is the first step of success and is defined by your work.
-        Welcome to the homepage of my portfolio.</p>
+    <div class="discription">
+        <div class="profile">
+                <img class="image" src="/images/IMG_3378.JPG" alt="image">
         </div>
-        <div>
-            <img class="image" src="/images/Leonardo_Kino_XL_create_a_imge_with_a_lapton_with_javascript_c_0.jpg" alt="image">
+        <div class="profile-discription"><p><span class="intro">I am Ajaya Sauden</span>
+                <br>Fresher in web development.
+            </p>
         </div>
     </div>
 
     <div id="works" class="projectworks">
-        <h2>Works:</h2>
-            <p> 
-                I have been learning programming about a year. Here are some of my
-                small projects collections during learning like different tools used
-                based on projects.
+        <div class="disc">
+            <h2 class="work-title">Works:</h2>
+            <div class="work-disc">
+                <p>I have been learning programming about a year. Here are some of my
+                    small projects collections during learning like different tools used
+                    based on projects.
+                </p> 
+            </div> 
+        </div> 
+        <div class="proj">
+            <p>A todo list where you can add the to-do task for reminder also you can 
+                track your task in realtime for completed and remaining.<br><a href="https://todo-list-gold-two-53.vercel.app/" target="_blank">demo</a>
             </p>
-            <ul>
-                <li><a href="https://todo-list-gold-two-53.vercel.app/" target="_blank">A simple todo-list</a>
-                </li>
-                
-            </ul>
+        </div>   
     </div>
 
     <div id="about" class="projectabout">
-        <h2>About me:</h2>
+        <div class="about-discription"><h2 class="about-title">About me:</h2>
             <p>    
-                Myself Ajaya Sauden currently completed bachelores in electronics communication and information engineering from Kathmandu Engineering College.
-                I would like to describe myself an enthusiast on arttificial intelligence and its unlimited
+                Myself Ajaya Sauden a fresher in web development and currently learning python and react for frontend 
+                as well as for other ml and ai contents. 
+                I would like to describe myself an enthusiast on artificial intelligence and its unlimited
                 posssibilities.
             </p>
+        </div>
+        <div class="about-details">
+            <p>College:<br>Kathmandu Engineering College<br>
+                Bachelor:<br>Electronics Communication and information<br>
+                Since:<br>2019-2024
+            </p>
+        </div>
     </div>
 
     <div id="contacts" class="projectcontacts">
-        <h2>Contacts information:</h2>
+        <h2 class="contact-title">Contacts information:</h2>
         <ul>
-            <li><a href="mailto:ajayasauden.01@gmail.com">ajayasauden.01@gmail.com</a>
+            <li>ajayasauden.01@gmail.com</a>
             </li>
             <li>mobile:987654321</li>
             <li>github:<a href="https://github.com/ajayasauden" target="_blank">ajayasauden</a>
@@ -65,7 +83,11 @@
 
         </ul>  
     </div>
-    <script src="index.js"></script>
+
+    <footer>
+        <p>© 2024 All right reserved.</p>
+    </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
