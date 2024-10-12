@@ -8,84 +8,92 @@
 
 </head>
 <body>
-    <nav class="top-row">
+    <header class="top-row">
         <div class="name" id="home">Welcome,</div>
         <div class="logo-container">
-            <img class="logo mail" onclick="contacts()" src="/images/mail.png">
-            <img class="logo linkedin" onclick="contacts()" src="/images/linkedin.png">
-            <img class="logo phone" onclick="contacts()" src="/images/phone.png">
-            <img class="logo github" onclick="contacts()" src="/images/github.png">
+            <div class="cmail"><img class="logo mail" onclick="contacts()" src="/images/mail.png" alt="Email icon">
+                <div class="tooltip">Email</div>
+            </div>
+            <div class="clinkedin"><img class="logo linkedin" onclick="contacts()" src="/images/linkedin.png" alt="Linkedin icon">
+                <div class="tooltip">Linkedin</div>
+            </div>
+            <div class="cphone"><img class="logo phone" onclick="contacts()" src="/images/phone.png" alt="Phone icon">
+                <div class="tooltip">Phone</div>
+            </div>
+            <div class="cgithub"><img class="logo github" onclick="contacts()" src="/images/github.png" alt="Github icon">
+                <div class="tooltip">Github</div>
+            </div>
+            
         </div>
-        <div class="navigation">
+        <nav class="navigation">
             <button class="js-home homeButton"
             onclick="home()">Home</button>
             <button onclick="works()">Works</button>  
             <button onclick="aboutMe()">About me</button>  
             <button class="js-contacts contactsButton"
             onclick="contacts()">Contacts</button>
-            
+        </nav>
+    </header> 
+    <main>
+        <div class="discription">
+            <div class="profile">
+                    <img class="image" src="/images/IMG_3378.JPG" alt="Ajaya Sauden's profile picture">
+            </div>
+            <div class="profile-discription"><p><span class="intro">I am Ajaya Sauden</span>
+                    <br>Fresher in web development.
+                </p>
+            </div>
         </div>
-    </nav> 
     
-    <div class="discription">
-        <div class="profile">
-                <img class="image" src="/images/IMG_3378.JPG" alt="image">
-        </div>
-        <div class="profile-discription"><p><span class="intro">I am Ajaya Sauden</span>
-                <br>Fresher in web development.
-            </p>
-        </div>
-    </div>
-
-    <div id="works" class="projectworks">
-        <div class="disc">
-            <h2 class="work-title">Works:</h2>
-            <div class="work-disc">
-                <p>I have been learning programming about a year. Here are some of my
-                    small projects collections during learning like different tools used
-                    based on projects.
-                </p> 
+        <div id="works" class="projectworks">
+            <div class="disc">
+                <h2 class="work-title">Works:</h2>
+                <div class="work-disc">
+                    <p>I have been learning programming about a year. Here are some of my
+                        small projects collections during learning like different tools used
+                        based on projects.
+                    </p> 
+                </div> 
             </div> 
-        </div> 
-        <div class="proj">
-            <p>A todo list where you can add the to-do task for reminder also you can 
-                track your task in realtime for completed and remaining.<br><a href="https://todo-list-gold-two-53.vercel.app/" target="_blank">demo</a>
-            </p>
-        </div>   
-    </div>
-
-    <div id="about" class="projectabout">
-        <div class="about-discription"><h2 class="about-title">About me:</h2>
-            <p>    
-                Myself Ajaya Sauden a fresher in web development and currently learning python and react for frontend 
-                as well as for other ml and ai contents. 
-                I would like to describe myself an enthusiast on artificial intelligence and its unlimited
-                posssibilities.
-            </p>
+            <div class="proj">
+                <p>A todo list where you can add the to-do task for reminder also you can 
+                    track your task in realtime for completed and remaining.<br><a href="https://todo-list-gold-two-53.vercel.app/" target="_blank">demo</a>
+                </p>
+            </div>   
         </div>
-        <div class="about-details">
-            <p>College:<br>Kathmandu Engineering College<br>
-                Bachelor:<br>Electronics Communication and information<br>
-                Since:<br>2019-2024
-            </p>
+    
+        <div id="about" class="projectabout">
+            <div class="about-discription"><h2 class="about-title">About me:</h2>
+                <p>    
+                    Myself Ajaya Sauden a fresher in web development and currently learning python and react for frontend 
+                    as well as for other ml and ai contents. 
+                    I would like to describe myself an enthusiast on artificial intelligence and its unlimited
+                    posssibilities.
+                </p>
+            </div>
+            <div class="about-details">
+                <p>College:<br>Kathmandu Engineering College<br>
+                    Bachelor:<br>Electronics Communication and information<br>
+                    Since:<br>2019-2024
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div id="contacts" class="projectcontacts">
-        <h2 class="contact-title">Contacts information:</h2>
-        <ul>
-            <li>ajayasauden.01@gmail.com</a>
-            </li>
-            <li>mobile:987654321</li>
-            <li>github:<a href="https://github.com/ajayasauden" target="_blank">ajayasauden</a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/ajaya-sauden-06a2a530a/" target="_blank">linkedin</a>
-
-        </ul>  
-    </div>
-
+    
+        <div id="contacts" class="projectcontacts">
+            <h2 class="contact-title">Lets get in touch:</h2>
+            <ul>
+                <li>ajayasauden.01@gmail.com
+                </li>
+                <li>mobile:987654321</li>
+                <li>github:<a href="https://github.com/ajayasauden" target="_blank">ajayasauden</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/ajaya-sauden-06a2a530a/" target="_blank">linkedin</a>
+    
+            </ul>  
+        </div>
+    </main>
     <footer>
-        <p>© 2024 All right reserved.</p>
+        <p>© 2024 Ajaya Sauden. All right reserved.</p>
     </footer>
     <script src="script.js"></script>
     

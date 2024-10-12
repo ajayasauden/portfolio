@@ -1,7 +1,7 @@
 body{
     font-family: arial;
     margin-top:0px;
-    background:linear-gradient(rgb(251, 171, 171),rgb(148, 215, 224), pink)
+    background:linear-gradient(rgb(0, 0, 0),rgb(148, 215, 224), pink)
 }
 
 .top-row{
@@ -43,6 +43,39 @@ height:112px;
     height: 20px;
     width: 20px;
     border-radius: 8px;  
+    cursor:pointer;
+    /* opacity:1; */
+}
+/* .logo:hover{
+    opacity: 0.5;
+} */
+.cmail,.clinkedin,.cphone,.cgithub{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cmail .tooltip,
+.clinkedin .tooltip,
+.cphone .tooltip,
+.cgithub .tooltip{
+    position:absolute;
+    color:white;
+    background-color: rgb(146, 144, 144);
+    font-size: 12px;
+    padding:4px 7px;
+    border-radius: 2px;
+    opacity:0;
+    transition:opacity 0.15s;
+    bottom:-25px;
+    pointer-events: none;
+}
+.cmail:hover .tooltip,
+.clinkedin:hover .tooltip,
+.cphone:hover .tooltip,
+.cgithub:hover .tooltip{
+    opacity:1;
 }
 @media(max-width:799px){
     .logo-container{
@@ -109,9 +142,9 @@ button{
 .discription{
     color:rgb(95, 95, 118);
     margin: 10px;
-    background-image: url('/images/wow.jpg'); /* add this line */
-    background-size: cover; /* optional, but recommended */
-    background-position: center; /* optional, but recommended */
+    background-image: url('/images/wow.jpg'); /* background image from css*/
+    background-size: cover; /*covers overall background*/
+    background-position: center; /* optional */
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +192,7 @@ button:hover{
 }
 
 .projectworks{
-    background-color: rgb(159, 209, 215);
+    /* background-color: rgb(159, 209, 215); */
     padding-left: 10px;
     display:flex;
     justify-content: space-between;
@@ -189,13 +222,13 @@ button:hover{
     .projectworks{
         flex-direction:column;
     }
-    .disc,.proj{
+    /* .disc,.proj{
         flex-basis: 150px;
         min-height:150px;
-    }
+    } */
 }
 .projectabout{
-    background-color: rgb(159, 209, 215);
+    /* background-color: rgb(159, 209, 215); */
     padding-left: 10px;
     display:flex;
     justify-content: space-between;
@@ -222,8 +255,8 @@ button:hover{
     color:rgb(80, 79, 79);
 }
 .projectcontacts{
-    background-color: rgb(159, 209, 215);
-    padding-left: 10px;
+    /* background-color: rgb(252, 218, 218); */
+    padding-left: 20px;
 }
 p{
     font-size:25px;
